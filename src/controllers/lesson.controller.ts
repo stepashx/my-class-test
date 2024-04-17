@@ -1,6 +1,6 @@
 import express from "express";
-import {getLessons} from "../services/lesson.service";
-import {GetLessonsQueryDto} from "../dto/get-lessons-query.dto";
+import {getLessons} from "../services";
+import {GetLessonsQueryDto} from "../dto";
 import {ParamsDictionary} from 'express-serve-static-core';
 
 export const lessonsRouter = express.Router();

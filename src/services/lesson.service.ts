@@ -1,6 +1,6 @@
-import {GetLessonsQueryDto} from "../dto/get-lessons-query.dto";
+import {GetLessonsQueryDto} from "../dto";
 import {Lesson} from "../entities";
-import {db} from "../config/db.config";
+import {db} from "../config";
 
 export async function getLessons(getLessonsQueryDto: GetLessonsQueryDto): Promise<Array<Lesson>> {
     try {
